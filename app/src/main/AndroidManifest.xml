@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PaneDemo">
+
+        <activity
+            android:name=".DemoLauncherActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".panecomparison.unoptimised.list.UnoptimisedListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".panecomparison.legacy.list.ListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".panecomparison.legacy.product.ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".panecomparison.unoptimised.product.UnoptimisedProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".panecomparison.unoptimised.message.UnoptimisedMessageActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".panecomparison.legacy.message.MessageActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".panecomparison.nav3.NavActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
